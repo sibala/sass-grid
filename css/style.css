@@ -1,0 +1,206 @@
+body:hover {
+  background: url(12_col.gif) center top repeat-y;
+  background-size: 90%;
+}
+
+.container {
+  margin: 20px auto;
+  width: 90%;
+}
+
+[class*=col-] {
+  margin: 0 10px 20px 10px;
+  min-height: 200px;
+  float: left;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.row:before,
+.row:after {
+  content: "";
+  display: table;
+}
+
+.row:after {
+  clear: both;
+}
+
+@media screen and (max-width: 767px) {
+  [class*=col-] {
+    margin: 0 0px 20px 0px;
+    width: 100%;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .col-sm-1 {
+    width: 44px;
+  }
+
+  .col-sm-2 {
+    width: 108px;
+  }
+
+  .col-sm-3 {
+    width: 172px;
+  }
+
+  .col-sm-4 {
+    width: 236px;
+  }
+
+  .col-sm-5 {
+    width: 300px;
+  }
+
+  .col-sm-6 {
+    width: 364px;
+  }
+
+  .col-sm-7 {
+    width: 428px;
+  }
+
+  .col-sm-8 {
+    width: 492px;
+  }
+
+  .col-sm-9 {
+    width: 556px;
+  }
+
+  .col-sm-10 {
+    width: 620px;
+  }
+
+  .col-sm-11 {
+    width: 684px;
+  }
+
+  .col-sm-12 {
+    width: 748px;
+  }
+
+  .container {
+    width: 768px;
+  }
+
+  body:hover {
+    background-size: 768px;
+  }
+}
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+  .col-md-1 {
+    width: 60px;
+  }
+
+  .col-md-2 {
+    width: 140px;
+  }
+
+  .col-md-3 {
+    width: 220px;
+  }
+
+  .col-md-4 {
+    width: 300px;
+  }
+
+  .col-md-5 {
+    width: 380px;
+  }
+
+  .col-md-6 {
+    width: 460px;
+  }
+
+  .col-md-7 {
+    width: 540px;
+  }
+
+  .col-md-8 {
+    width: 620px;
+  }
+
+  .col-md-9 {
+    width: 700px;
+  }
+
+  .col-md-10 {
+    width: 780px;
+  }
+
+  .col-md-11 {
+    width: 860px;
+  }
+
+  .col-md-12 {
+    width: 940px;
+  }
+
+  .container {
+    width: 960px;
+  }
+
+  body:hover {
+    background-size: 960px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .col-lg-1 {
+    width: 80px;
+  }
+
+  .col-lg-2 {
+    width: 180px;
+  }
+
+  .col-lg-3 {
+    width: 280px;
+  }
+
+  .col-lg-4 {
+    width: 380px;
+  }
+
+  .col-lg-5 {
+    width: 480px;
+  }
+
+  .col-lg-6 {
+    width: 580px;
+  }
+
+  .col-lg-7 {
+    width: 680px;
+  }
+
+  .col-lg-8 {
+    width: 780px;
+  }
+
+  .col-lg-9 {
+    width: 880px;
+  }
+
+  .col-lg-10 {
+    width: 980px;
+  }
+
+  .col-lg-11 {
+    width: 1080px;
+  }
+
+  .col-lg-12 {
+    width: 1180px;
+  }
+
+  .container {
+    width: 1200px;
+  }
+
+  body:hover {
+    background-size: 1200px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

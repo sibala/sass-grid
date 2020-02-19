@@ -1,0 +1,96 @@
+body:hover {
+	background: url(12_col.gif) center top repeat-y;
+	background-size: 90%;
+}
+
+.container {
+	margin: 20px auto;
+	width: 90%;
+}
+
+[class*="col-"] {
+	margin: 0 10px 20px 10px;
+	min-height: 200px;
+	float: left;
+	background-color: rgba(#000, 0.3);
+}
+
+.row:before,
+.row:after {
+  content: "";
+  display: table;
+} 
+.row:after {
+  clear: both;
+}
+
+@media screen and (max-width: 767px) {
+	[class*="col-"] {
+		margin: 0 0px 20px 0px;
+		width: 100%;;
+	}
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+	$containerWidth: 768px;
+	$columnsTotal: 12;
+	$gutterWidth: 20px;
+	$columnWidth: $containerWidth/$columnsTotal - $gutterWidth;
+
+	@for $columnNumber from 1 through $columnsTotal {
+		.col-sm-#{$columnNumber} {
+			width: ($columnWidth * $columnNumber) + ($gutterWidth * ($columnNumber - 1));
+		}
+	}
+
+	.container {
+		width: $containerWidth;
+	}
+
+	body:hover {
+		background-size: $containerWidth;
+	}
+}
+
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+	$containerWidth: 960px;
+	$columnsTotal: 12;
+	$gutterWidth: 20px;
+	$columnWidth: $containerWidth/$columnsTotal - $gutterWidth;
+
+	@for $columnNumber from 1 through $columnsTotal {
+		.col-md-#{$columnNumber} {
+			width: ($columnWidth * $columnNumber) + ($gutterWidth * ($columnNumber - 1));
+		}
+	}
+
+	.container {
+		width: $containerWidth;
+	}
+
+	body:hover {
+		background-size: $containerWidth;
+	}
+}
+
+@media screen and (min-width: 1200px) {
+	$containerWidth: 1200px;
+	$columnsTotal: 12;
+	$gutterWidth: 20px;
+	$columnWidth: $containerWidth/$columnsTotal - $gutterWidth;
+
+	@for $columnNumber from 1 through $columnsTotal {
+		.col-lg-#{$columnNumber} {
+			width: ($columnWidth * $columnNumber) + ($gutterWidth * ($columnNumber - 1));
+		}
+	}
+
+	.container {
+		width: $containerWidth;
+	}
+
+	body:hover {
+		background-size: $containerWidth;
+	}
+}
+
